@@ -1,27 +1,27 @@
 ===============================
-Transition from OpenStackClient
+Transition from fibostackclient
 ===============================
 
-``osc-lib`` was extracted from the main OpenStackClient repo after the
+``fsc-lib`` was extracted from the main fibostackclient repo after the
 OSC 2.4.0 release.  During the migration all module names have changed
-from ``openstackclient.*`` to ``osc_lib.*``.  In addition, some re-arranging
+from ``fibostackclient.*`` to ``fsc_lib.*``.  In addition, some re-arranging
 has been done internally to better align modules.
 
 The complete list of public module name changes:
 
-* ``openstackclient.api.api`` -> ``osc_lib.api.api``
-* ``openstackclient.api.auth`` -> ``osc_lib.api.auth``
-* ``openstackclient.api.utils`` -> ``osc_lib.api.utils``
-* ``openstackclient.common.command`` -> ``osc_lib.command.command``
-* ``openstackclient.common.commandmanager`` ->
-  ``osc_lib.command.commandmanager``
-* ``openstackclient.common.exceptions`` -> ``osc_lib.exceptions``
-* ``openstackclient.common.logs`` -> ``osc_lib.logs``
-* ``openstackclient.common.parseractions`` -> ``osc_lib.cli.parseractions``
-* ``openstackclient.common.session`` -> ``osc_lib.session``
-* ``openstackclient.common.utils`` -> ``osc_lib.utils``
-* ``openstackclient.tests.fakes`` -> ``osc_lib.tests.fakes``
-* ``openstackclient.tests.utils`` -> ``osc_lib.tests.utils``
+* ``fibostackclient.api.api`` -> ``fsc_lib.api.api``
+* ``fibostackclient.api.auth`` -> ``fsc_lib.api.auth``
+* ``fibostackclient.api.utils`` -> ``fsc_lib.api.utils``
+* ``fibostackclient.common.command`` -> ``fsc_lib.command.command``
+* ``fibostackclient.common.commandmanager`` ->
+  ``fsc_lib.command.commandmanager``
+* ``fibostackclient.common.exceptions`` -> ``fsc_lib.exceptions``
+* ``fibostackclient.common.logs`` -> ``fsc_lib.logs``
+* ``fibostackclient.common.parseractions`` -> ``fsc_lib.cli.parseractions``
+* ``fibostackclient.common.session`` -> ``fsc_lib.session``
+* ``fibostackclient.common.utils`` -> ``fsc_lib.utils``
+* ``fibostackclient.tests.fakes`` -> ``fsc_lib.tests.fakes``
+* ``fibostackclient.tests.utils`` -> ``fsc_lib.tests.utils``
 
 Additional Changes
 ==================
@@ -40,7 +40,7 @@ authentication objects.
 Plugins are encouraged to use the ClientManager interface for obtaining
 information about global configuration.
 
-* ``openstackclient.common.clientmanager`` -> ``osc_lib.clientmanager``
+* ``fibostackclient.common.clientmanager`` -> ``fsc_lib.clientmanager``
 * All of the handling of the ``verify``/``insecure``/``cacert`` configuration
   options has been consolidated into ``ClientManager``.  This converts the
   ``--verify``, ``--insecure`` and ``--os-cacert`` options into a
@@ -94,8 +94,8 @@ information about global configuration.
 Shell
 =====
 
-* ``openstackclient.shell`` -> ``osc_lib.shell``
-* Break up ``OpenStackShell.initialize_app()``
+* ``fibostackclient.shell`` -> ``fsc_lib.shell``
+* Break up ``FiboStackShell.initialize_app()``
   * leave all plugin initialization in OSC in ``_load_plugins()``
   * leave all command loading in OSC in ``_load_commands()``
 

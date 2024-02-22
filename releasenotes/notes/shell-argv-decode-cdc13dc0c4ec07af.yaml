@@ -1,5 +1,5 @@
 ---
 fixes:
   - |
-    Decode argv into Unicode on Python 2 in ``OpenStackShell.main()``
+    Decode argv into Unicode on Python 2 in ``FiboStackShell.main()``
     [OSC Bug `1603494 <https://bugs.launchpad.net/bugs/1603494>`_]

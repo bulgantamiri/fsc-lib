@@ -1,4 +1,4 @@
-# Copyright 2014 OpenStack Foundation
+# Copyright 2014 FiboStack Foundation
 #
 # Licensed under the Apache License, Version 2.0 (the "License"); you may
 # not use this file except in compliance with the License. You may obtain
@@ -31,7 +31,7 @@ def run_apidoc(app):
         return
     run_already = True
 
-    package_dir = path.abspath(path.join(app.srcdir, '..', '..', 'osc_lib'))
+    package_dir = path.abspath(path.join(app.srcdir, '..', '..', 'fsc_lib'))
     source_dir = path.join(app.srcdir, 'api')
     apidoc.main(
         [
@@ -39,7 +39,7 @@ def run_apidoc(app):
             package_dir,
             '-f',
             '-H',
-            'osc-lib Modules',
+            'fsc-lib Modules',
             '-o',
             source_dir,
         ]

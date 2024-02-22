@@ -11,7 +11,7 @@
 # implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-# osc-lib Release Notes documentation build configuration file, created by
+# fsc-lib Release Notes documentation build configuration file, created by
 # sphinx-quickstart on Thu Jul 28 17:16:41 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -49,24 +49,24 @@ linklogger.setLevel(40)  # Ignore messages less severe than ERROR
 extensions = [
     'reno.sphinxext',
     'sphinx.ext.extlinks',
-    'openstackdocstheme',
+    'fibostackdocstheme',
 ]
 
 # Set aliases for extlinks
 # * lpbug - generic Launchpad bug        :lpbug:`123456`
-# * oscbp - OSC blueprints               :oscbp:`Blue Print <bp-name>`
-# * oscdoc - OSC Docs                    :oscdoc:`Comamnd List <command-list>`
+# * fscbp - OSC blueprints               :fscbp:`Blue Print <bp-name>`
+# * fscdoc - OSC Docs                    :fscdoc:`Comamnd List <command-list>`
 extlinks = {
     'lpbug': (
         'https://bugs.launchpad.net/bugs/%s',
         'Bug ',
     ),
-    'oscbp': (
-        'https://blueprints.launchpad.net/python-openstackclient/+spec/%s',
+    'fscbp': (
+        'https://blueprints.launchpad.net/python-fibostackclient/+spec/%s',
         '',
     ),
-    'oscdoc': (
-        'http://docs.openstack.org/developer/osc-lib/%s.html',
+    'fscdoc': (
+        'http://docs.fibostack.org/developer/fsc-lib/%s.html',
         '',
     ),
 }
@@ -88,13 +88,13 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'osc-lib Release Notes'
-copyright = '2016, osc-lib Developers'
+project = 'fsc-lib Release Notes'
+copyright = '2016, fsc-lib Developers'
 
-# openstackdocstheme options
-openstackdocs_repo_name = 'openstack/osc-lib'
-openstackdocs_auto_name = False
-openstackdocs_use_storyboard = True
+# fibostackdocstheme options
+fibostackdocs_repo_name = 'fibostack/fsc-lib'
+fibostackdocs_auto_name = False
+fibostackdocs_use_storyboard = True
 
 # Release notes do not need a version in the title, they span
 # multiple versions.
@@ -156,7 +156,7 @@ pygments_style = 'native'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'openstackdocs'
+html_theme = 'fibostackdocs'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -262,8 +262,8 @@ latex_documents = [
     (
         'index',
         'OSC_LIBReleaseNotes.tex',
-        'osc-lib Release Notes Documentation',
-        'osc-lib Developers',
+        'fsc-lib Release Notes Documentation',
+        'fsc-lib Developers',
         'manual',
     ),
 ]
@@ -302,9 +302,9 @@ latex_documents = [
 man_pages = [
     (
         'index',
-        'osc_libreleasenotes',
-        'osc-lib Release Notes Documentation',
-        ['osc-lib Developers'],
+        'fsc_libreleasenotes',
+        'fsc-lib Release Notes Documentation',
+        ['fsc-lib Developers'],
         1,
     )
 ]
@@ -323,10 +323,10 @@ texinfo_documents = [
     (
         'index',
         'OSC_LIBReleaseNotes',
-        'osc-lib Release Notes Documentation',
-        'osc-lib Developers',
+        'fsc-lib Release Notes Documentation',
+        'fsc-lib Developers',
         'OSC_LIBReleaseNotes',
-        'Common base library for OpenStackClient plugins.',
+        'Common base library for fibostackclient plugins.',
         'Miscellaneous',
     )
 ]

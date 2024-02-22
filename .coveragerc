@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = osc_lib
+source = fsc_lib
 
 [report]
 ignore_errors = True

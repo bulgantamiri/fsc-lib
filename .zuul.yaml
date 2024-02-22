@@ -2,24 +2,24 @@
 - project:
     templates:
       - check-requirements
-      - openstack-python3-antelope-jobs
-      - osc-tox-unit-tips
-      - publish-openstack-docs-pti
+      - fibostack-python3-antelope-jobs
+      - fsc-tox-unit-tips
+      - publish-fibostack-docs-pti
       - release-notes-jobs-python3
     check:
       jobs:
-        - osc-functional-devstack:
+        - fsc-functional-devstack:
             required-projects:
-              - openstack/python-openstackclient
-        - osc-functional-devstack-tips:
+              - fibostack/python-fibostackclient
+        - fsc-functional-devstack-tips:
             voting: false
             # The functional-tips job only tests the latest and shouldn't be run
             # on the stable branches
             branches: ^(?!stable)
             required-projects:
-              - openstack/python-openstackclient
+              - fibostack/python-fibostackclient
     gate:
       jobs:
-        - osc-functional-devstack:
+        - fsc-functional-devstack:
             required-projects:
-              - openstack/python-openstackclient
+              - fibostack/python-fibostackclient

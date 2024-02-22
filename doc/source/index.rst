@@ -1,8 +1,8 @@
 =========================================
-osc-lib -- OpenStackClient Plugin Library
+fsc-lib -- fibostackclient Plugin Library
 =========================================
 
-OpenStackClient (aka OSC) is a command-line client for OpenStack.  osc-lib
+fibostackclient (aka OSC) is a command-line client for FiboStack.  fsc-lib
 is a package of common support modules for writing OSC plugins.
 
 Contents:

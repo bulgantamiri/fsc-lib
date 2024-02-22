@@ -1,5 +1,5 @@
 =====================
-osc-lib Release Notes
+fsc-lib Release Notes
 =====================
 
 .. toctree::

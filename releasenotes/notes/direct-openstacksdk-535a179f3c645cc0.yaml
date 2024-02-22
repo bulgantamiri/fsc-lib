@@ -2,4 +2,4 @@
 upgrade:
   - |
     The dependency on ``os-client-config`` has been removed in favor of
-    direct use of ``openstacksdk``.
+    direct use of ``fibostacksdk``.

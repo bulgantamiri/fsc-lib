@@ -1,8 +1,8 @@
-OpenStack Style Commandments
+FiboStack Style Commandments
 ============================
 
-- Step 1: Read the OpenStack Style Commandments
-  https://docs.openstack.org/hacking/latest/user/hacking.html
+- Step 1: Read the FiboStack Style Commandments
+  https://docs.fibostack.org/hacking/latest/user/hacking.html
 - Step 2: Read on
 
 General
