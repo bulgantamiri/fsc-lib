@@ -4,4 +4,4 @@ fixes:
     Fixes incorrect error when using ``auth_type: none`` in ``clouds.yaml``.
   - |
     Respects the ``<service type>_endpoint_override`` configuration options,
-    similarly to fibostacksdk.
+    similarly to openstacksdk.

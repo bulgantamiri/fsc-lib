@@ -143,7 +143,7 @@ class FakeModule(object):
     def __init__(self, name, version):
         self.name = name
         self.__version__ = version
-        # Workaround for fibostacksdk case
+        # Workaround for openstacksdk case
         self.version = mock.Mock()
         self.version.__version__ = version
 
